@@ -449,6 +449,16 @@ a { color: inherit; text-decoration: none; }
 }
 .voice-text::before { content: "「"; color: var(--gold); }
 .voice-text::after  { content: "」"; color: var(--gold); }
+.affinity-cta {
+  text-align: center;
+  margin-top: 48px;
+}
+.affinity-cta-note {
+  margin-top: 12px;
+  font-size: .8rem;
+  color: var(--gray);
+  letter-spacing: .04em;
+}
 
 /* ===== FIRST VISIT / PROPOSAL ===== */
 .first-visit-highlight {
