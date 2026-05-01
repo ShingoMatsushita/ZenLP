@@ -376,6 +376,86 @@ a { color: inherit; text-decoration: none; }
   .service-badge { grid-column: 2; }
 }
 
+/* ===== EMPATHY / AFFINITY ===== */
+.empathy-quote {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 36px;
+  padding: 48px 24px 32px;
+  position: relative;
+}
+.empathy-quote-mark {
+  font-size: 9rem;
+  color: var(--gold);
+  opacity: .12;
+  line-height: .4;
+  font-family: Georgia, serif;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  user-select: none;
+}
+.empathy-quote-text {
+  font-size: clamp(1.2rem, 3vw, 1.65rem);
+  line-height: 1.75;
+  color: var(--black);
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+.empathy-lead {
+  text-align: center;
+  color: var(--gray);
+  font-size: 1rem;
+  margin-bottom: 40px;
+  line-height: 1.9;
+}
+.voice-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 0;
+}
+.voice-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--gold);
+  padding: 20px 20px 20px 22px;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.voice-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+.voice-text {
+  font-size: .9rem;
+  color: var(--black);
+  line-height: 1.85;
+}
+.voice-text::before { content: "「"; color: var(--gold); }
+.voice-text::after  { content: "」"; color: var(--gold); }
+
+/* ===== FIRST VISIT / PROPOSAL ===== */
+.first-visit-highlight {
+  display: inline;
+  color: var(--gold);
+  font-weight: 600;
+}
+.first-visit-note {
+  font-size: .92rem;
+  color: var(--gray);
+  line-height: 1.9;
+  max-width: 560px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
 /* ===== REVIEWS / SOCIAL PROOF ===== */
 .proof-total {
   text-align: center;

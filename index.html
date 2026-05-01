@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zen Japanese Massage| シドニーNo.1 日系マッサージ</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <!-- ===== Google Analytics (GA4) ===== -->
   <!-- TODO: G-XXXXXXXXXX を実際の測定IDに置き換えてください -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -36,23 +37,26 @@
   </div>
 </header>
 
+<!-- [SECTION: Hero] -->
 <!-- ===== HERO ===== -->
 <section class="hero">
   <div class="container">
-    <div class="hero-content">
-      <div class="hero-badge">Physiotherapist-Owned Massage Studio</div>
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="900">
+      <!-- [COPY: Hero badge] -->
+      <div class="hero-badge">Sydney &amp; Auckland | Remedial Massage &amp; Physiotherapy by Japanese Therapists</div>
+      <!-- [COPY: Hero main headline] -->
       <h1 class="hero-title">
-        何をしても取れない<br>
-        <em>肩こり・腰痛</em>──<br>
-        医療資格を持つセラピストが<br>根本から解消します。
+        その肩こり・腰痛、<br>
+        <em>もう我慢しなくていい。</em>
       </h1>
+      <!-- [COPY: Hero sub headline] -->
       <p class="hero-desc">
-        日本・オーストラリアの医療資格を持つフィジオセラピストが、
-        指圧とトリガーポイント療法で<strong style="color:#fff;">痛みの原因</strong>に直接アプローチ。
-        民間保険（プライベートインシュアランス）適用でご利用いただけます。
+        頭痛・背中の痛み・スポーツ障害・デスクワーク疲れにも対応。<br>
+        日本仕込みの医療技術で、痛みの根本から変えます。
       </p>
+      <!-- [COPY: Hero CTA buttons] -->
       <div class="hero-ctas">
-        <a href="https://www.fresha.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">オンライン予約 →</a>
+        <a href="https://www.fresha.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">今すぐ予約する（オンライン・24時間受付）</a>
         <a href="#services" class="btn btn--outline" style="color:#fff; border-color:#fff;">メニューを見る</a>
       </div>
     </div>
@@ -99,43 +103,94 @@
   </div>
 </div>
 
-<!-- ===== STRENGTHS ===== -->
-<section class="section" id="strengths">
+<!-- [SECTION: Affinity - Customer Empathy] -->
+<!-- ===== EMPATHY / AFFINITY ===== -->
+<section class="section section--cream" id="affinity">
   <div class="container">
-    <div class="section-label">Why Choose Us</div>
-    <h2 class="section-title">他店とは違う、4つの理由</h2>
-    <div class="divider"></div>
-    <p class="section-lead">マッサージ業界において類を見ない医療資格と技術力で、あなたの不調に正面から向き合います。</p>
-    <div class="strengths-grid">
-      <div class="strength-card">
-        <div class="strength-icon">🏥</div>
-        <div class="strength-title">フィジオセラピストが直接施術・監修</div>
-        <p class="strength-desc">オーナー自身が日本の理学療法士・オーストラリアのフィジオセラピスト・リメディアルマッサージセラピストの3資格を保有。シドニー大学卒のフィジオも在籍し、医療的な視点で身体の不調を評価・改善します。</p>
+    <div class="section-label" style="text-align:center;">Does This Sound Like You?</div>
+    <!-- [COPY: Empathy section title] -->
+    <h2 class="section-title" style="text-align:center;" data-aos="fade-up">同じ悩みを、<br>繰り返していませんか？</h2>
+    <div class="divider" style="margin: 24px auto 40px;"></div>
+
+    <!-- [COPY: Empathy main quote] -->
+    <div class="empathy-quote" data-aos="fade-in" data-aos-duration="1000">
+      <div class="empathy-quote-mark">"</div>
+      <p class="empathy-quote-text">
+        マッサージを受けると、その日は楽になる。<br>
+        でも、また数日で元に戻る──
+      </p>
+    </div>
+
+    <!-- [COPY: Empathy lead text] -->
+    <p class="empathy-lead" data-aos="fade-up">そんな経験を繰り返していませんか？<br>実際に、こういった声をよくいただきます。</p>
+
+    <!-- [COPY: Customer voice cards — 4 items] -->
+    <div class="voice-cards">
+      <div class="voice-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="voice-icon">💻</div>
+        <p class="voice-text">デスクで一日中働いていると、夕方には首と肩が固まってしまう</p>
       </div>
-      <div class="strength-card">
-        <div class="strength-icon">👆</div>
-        <div class="strength-title">指圧×トリガーポイントで根本改善</div>
-        <p class="strength-desc">定型ストレッチが中心のタイマッサージとは異なり、筋肉の「こり」の原因点（トリガーポイント）を的確に捉えた指圧施術で、痛みや不調の根本にアプローチします。</p>
+      <div class="voice-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="voice-icon">🪑</div>
+        <p class="voice-text">腰が痛くて、長時間座っているのがしんどい</p>
       </div>
-      <div class="strength-card">
-        <div class="strength-icon">🛡️</div>
-        <div class="strength-title">民間保険（Private Insurance）適用</div>
-        <p class="strength-desc">最も人気のリメディアルマッサージはオーストラリアの民間医療保険が適用されます。Medibank・Bupa・HCFなど主要保険会社に対応。HICAPS端末でその場で精算できます。</p>
+      <div class="voice-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="voice-icon">🤯</div>
+        <p class="voice-text">頭痛が慢性化していて、集中力が上がらない</p>
       </div>
-      <div class="strength-card">
-        <div class="strength-icon">⭐</div>
-        <div class="strength-title">Google 4.9★を維持する圧倒的な信頼</div>
-        <p class="strength-desc">創業14年、日系マッサージ店として最大級の歴史と実績を持ちます。Googleマップでの多数のレビューと4.8〜5.0の高評価が、技術と接客の品質を証明しています。</p>
+      <div class="voice-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="voice-icon">🏃</div>
+        <p class="voice-text">ジムやスポーツで痛めた箇所が、なかなか良くならない</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- [SECTION: Strengths] -->
+<!-- ===== STRENGTHS ===== -->
+<section class="section" id="strengths">
+  <div class="container">
+    <!-- [COPY: Strengths section label & title] -->
+    <div class="section-label">Why Choose Us</div>
+    <h2 class="section-title" data-aos="fade-up">他店とは違う、4つの理由</h2>
+    <div class="divider"></div>
+    <p class="section-lead">マッサージ業界において類を見ない医療資格と技術力で、あなたの不調に正面から向き合います。</p>
+    <div class="strengths-grid">
+      <!-- [COPY: Strength card 1] -->
+      <div class="strength-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="strength-icon">🏥</div>
+        <div class="strength-title">フィジオセラピストが直接施術・監修</div>
+        <p class="strength-desc">オーナー自身が日本の理学療法士・オーストラリアのフィジオセラピスト・リメディアルマッサージセラピストの3資格を保有。シドニー大学卒のフィジオも在籍し、医療的な視点で身体の不調を評価・改善します。</p>
+      </div>
+      <!-- [COPY: Strength card 2] -->
+      <div class="strength-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="strength-icon">👆</div>
+        <div class="strength-title">指圧×トリガーポイントで根本改善</div>
+        <p class="strength-desc">定型ストレッチが中心のタイマッサージとは異なり、筋肉の「こり」の原因点（トリガーポイント）を的確に捉えた指圧施術で、痛みや不調の根本にアプローチします。</p>
+      </div>
+      <!-- [COPY: Strength card 3] -->
+      <div class="strength-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="strength-icon">🛡️</div>
+        <div class="strength-title">民間保険（Private Insurance）適用</div>
+        <p class="strength-desc">最も人気のリメディアルマッサージはオーストラリアの民間医療保険が適用されます。Medibank・Bupa・HCFなど主要保険会社に対応。HICAPS端末でその場で精算できます。</p>
+      </div>
+      <!-- [COPY: Strength card 4] -->
+      <div class="strength-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="strength-icon">⭐</div>
+        <div class="strength-title">5,600件超のレビューが証明する信頼</div>
+        <p class="strength-desc">創業14年、日系マッサージ店として最大級の歴史と実績を持ちます。Google 4.8★・Fresha 5.0★、累計5,600件以上の口コミが、技術と接客の品質を証明しています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- [SECTION: Qualifications / Credentials] -->
 <!-- ===== QUALIFICATIONS ===== -->
 <section class="section section--cream">
   <div class="container qualifications">
+    <!-- [COPY: Qualifications section label & title] -->
     <div class="section-label">Credentials</div>
-    <h2 class="section-title">資格・専門性</h2>
+    <h2 class="section-title" data-aos="fade-up">資格・専門性</h2>
     <div class="divider" style="margin: 24px auto;"></div>
     <p class="section-lead" style="margin: 0 auto 0;">医療関係者や慢性的な不調を抱えるお客様からも厚い信頼を得ている専門家チームです。</p>
     <div class="qual-grid">
@@ -163,11 +218,13 @@
   </div>
 </section>
 
+<!-- [SECTION: Founder Story] -->
 <!-- ===== FOUNDER STORY ===== -->
 <section class="section" id="story">
   <div class="container">
     <div class="story-grid">
-      <div>
+      <div data-aos="fade-right">
+        <!-- [COPY: Story section label & title] -->
         <div class="section-label">Our Story</div>
         <h2 class="section-title">「気持ちいいだけ」の<br>マッサージでは、足りない。</h2>
         <div class="divider"></div>
@@ -212,11 +269,13 @@
   </div>
 </section>
 
+<!-- [SECTION: Services / Menu] -->
 <!-- ===== SERVICES ===== -->
 <section class="section" id="services">
   <div class="container">
+    <!-- [COPY: Services section label & title] -->
     <div class="section-label">Our Services</div>
-    <h2 class="section-title">メニュー</h2>
+    <h2 class="section-title" data-aos="fade-up">メニュー</h2>
     <div class="divider"></div>
     <p class="section-lead">お身体の状態や目的に合わせて最適なメニューをご提案します。</p>
     <div class="service-list">
@@ -249,6 +308,57 @@
   </div>
 </section>
 
+<!-- [SECTION: Proposal - First Visit Flow] -->
+<!-- ===== FIRST VISIT / PROPOSAL ===== -->
+<section class="section section--cream" id="first-visit">
+  <div class="container" style="text-align:center;">
+    <div class="section-label">First Visit</div>
+    <!-- [COPY: First visit section title] -->
+    <h2 class="section-title" data-aos="fade-up">何から始めればいいか<br>迷っている方へ。</h2>
+    <div class="divider" style="margin: 24px auto 32px;"></div>
+    <!-- [COPY: First visit recommendation text] -->
+    <p class="section-lead" style="margin: 0 auto 48px;" data-aos="fade-up">
+      はじめての方には、まず <span class="first-visit-highlight">60分のリメディアルマッサージ</span> をおすすめしています。
+    </p>
+
+    <!-- [COPY: First visit 3-step flow] -->
+    <div class="steps-grid" data-aos="fade-up" data-aos-delay="100">
+      <div class="steps-connector"></div>
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <!-- [COPY: Step 1 title] -->
+        <div class="step-title">カウンセリング・評価<br><small style="font-weight:400; color:var(--gray);">約10分</small></div>
+        <!-- [COPY: Step 1 description] -->
+        <p class="step-desc">いつから・どこが・どのように痛むかを丁寧に確認。姿勢・動きのクセもチェックし、痛みの根本原因を把握します。</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <!-- [COPY: Step 2 title] -->
+        <div class="step-title">施術<br><small style="font-weight:400; color:var(--gray);">約45分</small></div>
+        <!-- [COPY: Step 2 description] -->
+        <p class="step-desc">評価結果をもとに、指圧・トリガーポイント・ストレッチなどを組み合わせてアプローチします。</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <!-- [COPY: Step 3 title] -->
+        <div class="step-title">アドバイス・プラン<br><small style="font-weight:400; color:var(--gray);">約5分</small></div>
+        <!-- [COPY: Step 3 description] -->
+        <p class="step-desc">施術後の変化を確認し、自宅ケアのコツや、必要であれば継続プランをご提案します。</p>
+      </div>
+    </div>
+
+    <!-- [COPY: First visit reassurance note] -->
+    <p class="first-visit-note" data-aos="fade-up">
+      「施術を受けるかどうかまだ迷っている」「とりあえず身体の状態だけ見てほしい」という方も、お気軽にどうぞ。
+    </p>
+
+    <!-- [COPY: First visit CTA button] -->
+    <a href="https://www.fresha.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary" data-aos="fade-up">初回60分リメディアルマッサージを予約する →</a>
+    <p style="margin-top:16px; font-size:.82rem; color:var(--gray);">カウンセリング含む ・ 完全予約制 ・ 24時間受付</p>
+  </div>
+</section>
+
+<!-- [SECTION: Reviews / Social Proof] -->
 <!-- ===== REVIEWS / SOCIAL PROOF ===== -->
 <section class="section" id="reviews">
   <div class="container">
@@ -309,6 +419,7 @@
   </div>
 </section>
 
+<!-- [SECTION: Photo Gallery] -->
 <!-- ===== PHOTO GALLERY（3枚） ===== -->
 <section class="section section--cream" id="gallery">
   <div class="container">
@@ -330,6 +441,7 @@
   </div>
 </section>
 
+<!-- [SECTION: Locations] -->
 <!-- ===== LOCATIONS（簡略版） ===== -->
 <section class="section" id="locations">
   <div class="container" style="text-align:center;">
@@ -382,6 +494,7 @@
   </div>
 </section>
 
+<!-- [SECTION: How to Book - Booking Process] -->
 <!-- ===== HOW TO BOOK ===== -->
 <section class="section" id="how-to-book">
   <div class="container" style="text-align:center;">
@@ -457,5 +570,14 @@
   </div>
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 700,
+    easing: 'ease-out-quad',
+    offset: 60
+  });
+</script>
 </body>
 </html>
