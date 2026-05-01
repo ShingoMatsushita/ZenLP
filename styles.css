@@ -816,6 +816,59 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.8;
 }
 
+/* ===== TESTIMONIAL CARDS（実名インタビュー） ===== */
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 48px 0 40px;
+}
+.testimonial-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 32px;
+}
+.testimonial-quote-mark {
+  font-size: 4rem;
+  color: var(--gold);
+  opacity: .18;
+  line-height: 1;
+  margin-bottom: -8px;
+  font-family: Georgia, serif;
+}
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+.testimonial-summary {
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: .04em;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 2px solid var(--gold);
+}
+.testimonial-author {
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+.testimonial-author-name {
+  font-weight: 600;
+  font-size: .88rem;
+  color: var(--dark);
+}
+.testimonial-author-detail {
+  font-size: .78rem;
+  color: var(--gray);
+  margin-top: 3px;
+  line-height: 1.6;
+}
+
 /* ===== モバイル共通: セクション padding 削減 ===== */
 @media (max-width: 768px) {
   .section { padding: 64px 0; }
