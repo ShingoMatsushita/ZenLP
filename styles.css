@@ -371,6 +371,29 @@ a { color: inherit; text-decoration: none; }
 }
 .service-price-from { font-size: .82rem; font-weight: 400; }
 .service-desc { font-size: .9rem; color: var(--gray); line-height: 1.8; }
+.service-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.service-bullets li {
+  font-size: .88rem;
+  color: var(--gray);
+  line-height: 1.7;
+  padding-left: 14px;
+  position: relative;
+}
+.service-bullets li::before {
+  content: "✦";
+  color: var(--gold);
+  font-size: .65rem;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
 .service-badge {
   font-size: .72rem;
   background: #e8f5e9;
