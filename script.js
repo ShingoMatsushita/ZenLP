@@ -27,13 +27,3 @@ const heroObserver = new IntersectionObserver(
   { threshold: 0 }
 );
 heroObserver.observe(hero);
-
-/* ===== 予約ボタンクリックを GA イベントとして計測 ===== */
-document.querySelectorAll('a[href*="fresha.com"]').forEach(link => {
-  link.addEventListener('click', () => {
-    gtag('event', 'booking_click', {
-      event_category: 'CTA',
-      event_label: link.textContent.trim(),
-    });
-  });
-});
