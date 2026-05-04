@@ -1,10 +1,3 @@
-/* ===== Google Analytics (GA4) ===== */
-// TODO: G-XXXXXXXXXX を実際の測定IDに置き換えてください
-window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX');
-
 /* ===== FAQ アコーディオン ===== */
 document.querySelectorAll('.faq-q').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -21,16 +14,19 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 
-/* ===== スティッキー予約ボタン（ヒーロー通過後に表示） ===== */
+/* ===== スティッキー予約ボタン＆ヘッダー（ヒーロー通過後に切り替え） ===== */
 const stickyBtn = document.getElementById('stickyBooking');
+const siteHeader = document.querySelector('.site-header');
 const hero = document.querySelector('.hero');
-const observer = new IntersectionObserver(
+const heroObserver = new IntersectionObserver(
   ([entry]) => {
-    stickyBtn.classList.toggle('visible', !entry.isIntersecting);
+    const past = !entry.isIntersecting;
+    stickyBtn.classList.toggle('visible', past);
+    siteHeader.classList.toggle('scrolled', past);
   },
-  { threshold: 0.1 }
+  { threshold: 0 }
 );
-observer.observe(hero);
+heroObserver.observe(hero);
 
 /* ===== 予約ボタンクリックを GA イベントとして計測 ===== */
 document.querySelectorAll('a[href*="fresha.com"]').forEach(link => {

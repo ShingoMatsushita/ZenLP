@@ -3,19 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zen Japanese Massage | シドニーの日系マッサージ専門店 | 創業14年・5,000件以上の口コミ</title>
+  <title>Zen Japanese Massage | シドニーの日系マッサージ | 創業14年・35,000名以上のご利用実績</title>
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="logo.png" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <!-- ===== Google Analytics (GA4) ===== -->
-  <!-- TODO: G-XXXXXXXXXX を実際の測定IDに置き換えてください -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <style>
+    .testimonial-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin:48px 0 40px}
+    .testimonial-card{background:#fff;border-radius:8px;border:1px solid #e0d9d0;box-shadow:0 4px 24px rgba(0,0,0,.08);padding:32px}
+    .testimonial-quote-mark{font-size:4rem;color:#b8973a;opacity:.18;line-height:1;margin-bottom:-8px;font-family:Georgia,serif}
+    .testimonial-text{font-size:1rem;line-height:1.9;color:#1a1a1a;margin-bottom:20px}
+    .testimonial-summary{font-size:.85rem;font-weight:700;color:#b8973a;letter-spacing:.04em;margin-bottom:20px;padding-left:10px;border-left:2px solid #b8973a}
+    .testimonial-author{border-top:1px solid #e0d9d0;padding-top:16px}
+    .testimonial-author-name{font-weight:600;font-size:.88rem;color:#1a1a1a}
+    .testimonial-author-detail{font-size:.78rem;color:#6b6b6b;margin-top:3px;line-height:1.6}
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SV3Q89VLW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6SV3Q89VLW');
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wlmjr426f6");
+  </script>
   <script src="script.js" defer></script>
 </head>
 <body>
 
 <!-- ===== STICKY BOOKING BUTTON ===== -->
 <div class="sticky-booking" id="stickyBooking">
-  <div class="sticky-booking-label">民間保険適用 ・ 日本語対応</div>
+  <div class="sticky-booking-label">民間保険還付の対象となる場合があります</div>
   <a href="https://www.fresha.com/book-now/zen-japanese-massage-r4r98fda/all-offer?share=true&pId=521319" target="_blank" rel="noopener noreferrer" class="sticky-booking-btn">
     <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
     今すぐ予約する
@@ -29,9 +55,6 @@
       <img src="logo.png" alt="Zen Japanese Massage" style="height: 40px; width: auto; display: block;">
     </a>
     <nav class="nav">
-      <a href="#strengths" class="nav-link">私たちの強み</a>
-      <a href="#services" class="nav-link">メニュー</a>
-      <a href="#reviews" class="nav-link">お客様の声</a>
       <a href="https://www.fresha.com/book-now/zen-japanese-massage-r4r98fda/all-offer?share=true&pId=521319" target="_blank" rel="noopener noreferrer" class="btn btn--primary">今すぐ予約</a>
     </nav>
   </div>
@@ -43,22 +66,25 @@
   <div class="container">
     <div class="hero-content" data-aos="fade-up" data-aos-duration="900">
       <!-- [COPY: Hero badge] -->
-      <div class="hero-badge">Sydney | Remedial Massage / Buccal / Gua Sha / Lymphatic Drainage by Japanese Therapists</div>
+      <div class="hero-badge">Physio-owned · Sydney · Est. 2010</div>
       <!-- [COPY: Hero main headline] -->
       <h1 class="hero-title">
-        その肩こり・腰痛、<br>
-        <em>もう我慢しなくていい。</em>
+        これは、<br>
+        <em>No Ordinary Massage.</em>
       </h1>
       <!-- [COPY: Hero sub headline] -->
+      <p class="hero-subhead">リメディアル・Buccal・Gua Sha・Lymphatic Drainageなど<br>日本人セラピストによる施術</p>
+      <!-- [COPY: Hero description] -->
       <p class="hero-desc">
-        頭痛・背中の張り・スポーツ後の疲労・デスクワーク疲れへの施術を提供。不調の箇所に集中してアプローチします。<br>
-        日本仕込みの施術技術で、痛みの根本にアプローチします。<br>
-        <span style="font-size:.92em; opacity:.85;">Buccal Massage・Gua Sha・Lymphatic Drainage も提供中。</span>
+        肩まわり・腰まわりの緊張から、むくみ・フェイスラインまで。<br>
+        日本の技術とフィジオセラピスト監修のもとで、<strong class="hero-highlight">35,000名以上</strong>のお客様にご利用いただいてきました。
       </p>
       <!-- [COPY: Hero CTA buttons] -->
       <div class="hero-ctas">
-        <a href="https://www.fresha.com/book-now/zen-japanese-massage-r4r98fda/all-offer?share=true&pId=521319" target="_blank" rel="noopener noreferrer" class="btn btn--primary">今すぐ予約する（オンライン・24時間受付）</a>
-        <a href="#services" class="btn btn--outline" style="color:#fff; border-color:#fff;">メニューを見る</a>
+        <div class="hero-cta-wrap">
+          <a href="https://www.fresha.com/book-now/zen-japanese-massage-r4r98fda/all-offer?share=true&pId=521319" target="_blank" rel="noopener noreferrer" class="btn btn--primary">今すぐ予約する</a>
+          <p class="hero-cta-caption">オンライン予約 · 24時間受付 · いつでもキャンセル可</p>
+        </div>
       </div>
     </div>
     <div class="hero-stats">
@@ -68,15 +94,11 @@
       </div>
       <div class="stat-card">
         <div class="stat-num">5,000<span class="stat-unit">+</span></div>
-        <div class="stat-label">累計口コミ件数</div>
+        <div class="stat-label">Freshaレビュー数</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num">3</div>
-        <div class="stat-label">保有医療・施術資格数</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">100<span class="stat-unit">%</span></div>
-        <div class="stat-label">日本人セラピスト在籍</div>
+        <div class="stat-num">A$70<span class="stat-unit">~</span></div>
+        <div class="stat-label">施術スタート価格</div>
       </div>
     </div>
   </div>
@@ -87,15 +109,15 @@
   <div class="container">
     <div class="trust-item">
       <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-      民間保険（Private Insurance）適用
+      民間保険還付（対象プランの場合）
     </div>
     <div class="trust-item">
       <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-      Sydney University卒フィジオ在籍
+      フィジオセラピスト経営
     </div>
     <div class="trust-item">
       <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-      日本語対応・完全予約制
+      日本の専門資格・技術を持つセラピスト多数在籍
     </div>
     <div class="trust-item">
       <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
@@ -117,8 +139,8 @@
     <div class="empathy-quote" data-aos="fade-in" data-aos-duration="1000">
       <div class="empathy-quote-mark">"</div>
       <p class="empathy-quote-text">
-        マッサージを受けると、その日は楽になる。<br>
-        でも、また数日で元に戻る──
+        受けた日は、気持ちよかった。<br>
+        でも、また同じ状態に戻っている──
       </p>
     </div>
 
@@ -127,29 +149,33 @@
 
     <!-- [COPY: Customer voice cards — 4 items] -->
     <div class="voice-cards">
-      <div class="voice-card" data-aos="fade-up" data-aos-delay="0">
+      <div class="voice-card" data-aos="fade-up">
         <div class="voice-icon">💻</div>
         <p class="voice-text">デスクで一日中働いていると、夕方には首と肩が固まってしまう</p>
       </div>
-      <div class="voice-card" data-aos="fade-up" data-aos-delay="80">
+      <div class="voice-card" data-aos="fade-up">
         <div class="voice-icon">🪑</div>
         <p class="voice-text">腰が痛くて、長時間座っているのがしんどい</p>
       </div>
-      <div class="voice-card" data-aos="fade-up" data-aos-delay="160">
+      <div class="voice-card" data-aos="fade-up">
         <div class="voice-icon">🤯</div>
-        <p class="voice-text">頭痛が慢性化していて、集中力が上がらない</p>
+        <p class="voice-text">首・肩まわりの張りが続いて、頭が重く感じる</p>
       </div>
-      <div class="voice-card" data-aos="fade-up" data-aos-delay="240">
+      <div class="voice-card" data-aos="fade-up">
         <div class="voice-icon">🏃</div>
         <p class="voice-text">ジムやスポーツで痛めた箇所が、なかなか良くならない</p>
       </div>
-      <div class="voice-card" data-aos="fade-up" data-aos-delay="320">
+      <div class="voice-card" data-aos="fade-up">
         <div class="voice-icon">✨</div>
         <p class="voice-text">顔のむくみやフェイスラインが気になって、Buccal・Gua Sha・リンパドレナージュを試したいと思っている</p>
       </div>
-      <div class="voice-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="voice-card" data-aos="fade-up">
         <div class="voice-icon">😮</div>
         <p class="voice-text">SNSでバッカルマッサージやグアシャの動画を見て興味はあるけど、どこが安全で技術のある施術院なのかわからない</p>
+      </div>
+      <div class="voice-card" data-aos="fade-up">
+        <div class="voice-icon">😬</div>
+        <p class="voice-text">朝起きると顎まわりが疲れている、顎のこわばりや張りが気になる</p>
       </div>
     </div>
 
@@ -158,7 +184,7 @@
       <a href="https://www.fresha.com/book-now/zen-japanese-massage-r4r98fda/all-offer?share=true&pId=521319" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
         まずは予約してみる →
       </a>
-      <p class="affinity-cta-note">24時間受付 ・ 無料キャンセル可（24時間前まで）</p>
+      <p class="affinity-cta-note">24時間受付 ・ いつでもキャンセル可</p>
     </div>
   </div>
 </section>
@@ -171,31 +197,31 @@
     <div class="section-label">Why Choose Us</div>
     <h2 class="section-title" data-aos="fade-up">他店とは違う、4つの理由</h2>
     <div class="divider"></div>
-    <p class="section-lead">マッサージ業界において類を見ない医療資格と技術力で、あなたの不調に正面から向き合います。</p>
+    <p class="section-lead">日本の施術技術とフィジオセラピスト監修——その両方を備えた日系マッサージスタジオです。</p>
     <div class="strengths-grid">
       <!-- [COPY: Strength card 1] -->
       <div class="strength-card" data-aos="fade-up" data-aos-delay="0">
         <div class="strength-icon">🏥</div>
-        <div class="strength-title">フィジオセラピストが直接施術・監修</div>
-        <p class="strength-desc">オーナー自身が日本の理学療法士・オーストラリアのフィジオセラピスト・リメディアルマッサージセラピストの3資格を保有。シドニー大学卒のフィジオも在籍し、施術プログラムを医療的な視点で監修しています。</p>
+        <div class="strength-title">AHPRA登録フィジオセラピストが経営・監修</div>
+        <p class="strength-desc">AHPRA登録フィジオセラピストであるオーナーが、日本の理学療法士・オーストラリアのフィジオセラピスト・リメディアルマッサージセラピストの3資格を保有し、スタジオの経営・監修を担っています。</p>
       </div>
       <!-- [COPY: Strength card 2] -->
       <div class="strength-card" data-aos="fade-up" data-aos-delay="80">
         <div class="strength-icon">👆</div>
-        <div class="strength-title">指圧×トリガーポイントで根本改善</div>
-        <p class="strength-desc">定型ストレッチが中心のタイマッサージとは異なり、筋肉の「こり」の原因点（トリガーポイント）を的確に捉えた指圧施術で、痛みや不調の根本にアプローチします。</p>
+        <div class="strength-title">トリガーポイントで深層にアプローチ</div>
+        <p class="strength-desc">筋肉の「こり」の原因点（トリガーポイント）を的確に捉えた施術で、筋肉の緊張・こりの深層にアプローチします。</p>
       </div>
       <!-- [COPY: Strength card 3] -->
       <div class="strength-card" data-aos="fade-up" data-aos-delay="160">
         <div class="strength-icon">🛡️</div>
-        <div class="strength-title">民間保険（Private Insurance）適用</div>
-        <p class="strength-desc">最も人気のリメディアルマッサージはオーストラリアの民間医療保険が適用されます。Medibank・Bupa・HCFなど主要保険会社に対応。HICAPS端末でその場で精算できます。</p>
+        <div class="strength-title">民間保険（Private Insurance）還付対応</div>
+        <p class="strength-desc">最も人気のリメディアルマッサージはオーストラリアの民間医療保険が適用されます。Medibank・Bupa・HCFをはじめとする主要保険会社の対象プラン・Provider認定がある場合に適用されます。HICAPS端末でその場で精算可能。カバー内容・待機期間・年間上限は各保険会社のプランにより異なります。</p>
       </div>
       <!-- [COPY: Strength card 4] -->
       <div class="strength-card" data-aos="fade-up" data-aos-delay="240">
         <div class="strength-icon">⭐</div>
-        <div class="strength-title">5,600件超のレビューが証明する信頼</div>
-        <p class="strength-desc">創業14年、日系マッサージ店として最大級の歴史と実績を持ちます。Fresha 5.0★、累計5,000件以上の口コミが、技術と接客の品質を証明しています。</p>
+        <div class="strength-title">5,000件超のFresha口コミ（2026年5月時点）</div>
+        <p class="strength-desc">創業14年、Freshaにて累計5,000件以上の口コミをいただいてきました。平均評価5.0★（2026年5月時点）。評価は店舗・時期により変動する場合があります。</p>
       </div>
     </div>
   </div>
@@ -209,29 +235,25 @@
     <div class="section-label">Credentials</div>
     <h2 class="section-title" data-aos="fade-up">資格・専門性</h2>
     <div class="divider" style="margin: 24px auto;"></div>
-    <p class="section-lead" style="margin: 0 auto 0;">多くのお客様から長年ご利用いただいているチームです。</p>
+    <p class="section-lead" style="margin: 0 auto 0;">日本の技術とフィジオセラピスト監修のもとで——経験豊富なセラピストチームです。</p>
     <div class="qual-grid">
       <div class="qual-card">
         <div class="qual-tag">OWNER</div>
         <div class="qual-name">日本 理学療法士</div>
-        <div class="qual-detail">国家資格取得。医学的なリハビリテーションの知識を施術に活かします。</div>
+        <div class="qual-detail">国家資格取得。リハビリテーションの専門知識を施術に活かします。</div>
       </div>
       <div class="qual-card">
         <div class="qual-tag">OWNER</div>
         <div class="qual-name">オーストラリア フィジオセラピスト</div>
-        <div class="qual-detail">豪州の医療資格を取得。解剖学・生理学に基づいた高度なアセスメントが可能です。</div>
+        <div class="qual-detail">豪州の資格を取得。解剖学・生理学の知識を施術に活かします。</div>
       </div>
       <div class="qual-card">
         <div class="qual-tag">OWNER</div>
         <div class="qual-name">リメディアルマッサージセラピスト</div>
-        <div class="qual-detail">保険適用施術の資格。慢性的な痛みや身体のケアを目的とした施術に対応します。</div>
-      </div>
-      <div class="qual-card">
-        <div class="qual-tag">STAFF</div>
-        <div class="qual-name">シドニー大学卒 フィジオセラピスト</div>
-        <div class="qual-detail">名門シドニー大学の理学療法学部出身。難関資格保持者が在籍しています。</div>
+        <div class="qual-detail">保険適用施術の資格。筋肉の緊張・こりや身体のケアを目的とした施術に対応します。</div>
       </div>
     </div>
+    <p style="text-align:center; font-size:.88rem; color:var(--gray); margin-top:24px;">施術スタッフは、担当メニューに応じた資格・研修を修了した経験豊富なセラピストです。</p>
   </div>
 </section>
 
@@ -243,16 +265,13 @@
       <div data-aos="fade-right">
         <!-- [COPY: Story section label & title] -->
         <div class="section-label">Our Story</div>
-        <h2 class="section-title">「気持ちいいだけ」の<br>マッサージでは、足りない。</h2>
+        <h2 class="section-title">日本の技術で、<br>あなたの身体に向き合う。</h2>
         <div class="divider"></div>
         <p style="color: var(--gray); line-height: 2; margin-bottom: 20px;">
-          日本で理学療法士として患者さんと向き合ううちに、ひとつの疑問が生まれました。<br>「なぜ、同じ肩こりが何度も繰り返されるのか？」
+          日本で理学療法士として患者さんと向き合ううちに、ひとつの疑問が生まれました。<br>「なぜ、身体の緊張は繰り返されるのか？」
         </p>
         <p style="color: var(--gray); line-height: 2; margin-bottom: 20px;">
-          原因は、表面の筋肉だけを揉む施術では、痛みの<strong>根本にある"こりの核（トリガーポイント）"</strong>に届かないからです。
-        </p>
-        <p style="color: var(--gray); line-height: 2; margin-bottom: 20px;">
-          シドニーに渡り、オーストラリアのフィジオセラピスト資格を取り直したのも、この確信があったから。日豪双方の医療知識と、指圧の技術を融合させた施術で、「繰り返す痛み」を根本から断ち切ることを、私たちは14年間追求してきました。
+          シドニーに渡り、オーストラリアのフィジオセラピスト資格を取り直したのも、この思いがあったから。日豪双方の知識を融合させた施術で、お身体のこりや緊張に、14年間向き合い続けています。
         </p>
         <p style="font-size:.9rem; color: var(--gold); font-weight: 600; letter-spacing:.05em;">— Zen Japanese Massage オーナー（理学療法士 / フィジオセラピスト）</p>
       </div>
@@ -263,7 +282,7 @@
             <div class="story-credential-bullet">✦</div>
             <div>
               <div class="story-credential-title">日本の国家資格：理学療法士</div>
-              <div class="story-credential-desc">医学的リハビリテーションの専門訓練を受けた国家資格保持者</div>
+              <div class="story-credential-desc">リハビリテーションの専門訓練を受けた国家資格保持者</div>
             </div>
           </div>
           <div class="story-credential-item">
@@ -277,7 +296,7 @@
             <div class="story-credential-bullet">✦</div>
             <div>
               <div class="story-credential-title">創業14年・シドニーで歩んだ実績</div>
-              <div class="story-credential-desc">地域のお客様から医療関係者まで、幅広い信頼を積み重ねてきました</div>
+              <div class="story-credential-desc">地域の多くのお客様に、14年間ご利用いただいてきました</div>
             </div>
           </div>
         </div>
@@ -294,44 +313,35 @@
     <div class="section-label">Our Services</div>
     <h2 class="section-title" data-aos="fade-up">メニュー</h2>
     <div class="divider"></div>
-    <p class="section-lead">お身体の状態や目的に合わせて最適なメニューをご提案します。<br>痛み・コリの改善から、Buccal・Gua Sha・Lymphatic Drainageなどのフェイシャル系メニューまで対応しています。</p>
+    <p class="section-lead">お身体の状態や目的に合わせて最適なメニューをご提案します。<br>筋肉の緊張・こりのケアから、Buccal・Gua Sha・Lymphatic Drainageなどのフェイシャル系メニューまで対応しています。</p>
     <div class="service-list">
       <div class="service-item">
         <div class="service-num">01</div>
         <div>
           <div class="service-name">リメディアルマッサージ</div>
           <div class="service-price">A$70<span class="service-price-from">~</span></div>
-          <p class="service-desc">全店で最も人気のメニュー。筋肉の深層にアプローチし、慢性的なこりや痛み、スポーツ障害のリハビリに効果的です。医療的なアセスメントをもとに施術計画を立てます。</p>
+          <p class="service-desc">全店で最も人気のメニュー。筋肉の深層にアプローチし、筋肉の緊張・こり・日常的な身体の違和感やスポーツ後のケアを目的とした施術です。フィジオセラピーの知識を取り入れた施術アプローチを提供しています。</p>
         </div>
-        <div class="service-badge">保険適用</div>
+        <div class="service-badge">保険還付対応</div>
       </div>
       <div class="service-item">
         <div class="service-num">02</div>
         <div>
-          <div class="service-name">指圧マッサージ</div>
-          <div class="service-price">A$70<span class="service-price-from">~</span></div>
-          <p class="service-desc">日本の伝統的な手技をベースに、トリガーポイント療法を組み合わせた独自の施術。肩こり・腰痛・頭痛など、不調の根本原因にピンポイントでアプローチします。</p>
-        </div>
-      </div>
-      <div class="service-item">
-        <div class="service-num">03</div>
-        <div>
           <div class="service-name">フェイシャル・リンパティック</div>
           <p class="service-desc">バッカルマッサージ・グアシャ・リンパドレナージュなど、フェイシャルケアと体のめぐりに特化したメニューをご用意しています。</p>
           <ul class="service-bullets">
-            <li><strong>Buccal Massage（バッカル）</strong> — 口腔内から顔・顎まわりにアプローチするフェイシャルマッサージ</li>
-            <li><strong>Gua Sha（グアシャ）</strong> — 古典的な手技を用いた顔・首まわりへのフェイシャルケア</li>
-            <li><strong>Lymphatic Drainage（リンパドレナージュ）</strong> — やさしいタッチで全身・顔まわりのリンパ流に働きかける施術</li>
+            <li><strong>Buccal Massage（バッカル）</strong> <span style="color:var(--gold);font-weight:600;margin:0 4px;">A$140~</span> — 口腔内から顔・顎まわりにアプローチ。顎の緊張・顎まわりのこわばりや不快感が気になる方にも対応しています</li>
+            <li><strong>Gua Sha（グアシャ）</strong> <span style="color:var(--gold);font-weight:600;margin:0 4px;">A$70~</span> — 古典的な手技を用いた顔・首まわりへのフェイシャルケア。むくみ・ほうれい線・くすみが気になる方に</li>
+            <li><strong>Lymphatic Drainage（リンパドレナージュ）</strong> <span style="color:var(--gold);font-weight:600;margin:0 4px;">A$70~</span> — やさしいタッチで全身・顔まわりのリンパの流れに働きかける施術。むくみ・体のだるさ・すっきり感を求める方に</li>
           </ul>
-          <p class="service-desc" style="margin-top:10px;">詳細・料金はFreshaの予約画面からご確認ください。</p>
         </div>
         <div class="service-badge">美容・フェイシャル</div>
       </div>
       <div class="service-item">
-        <div class="service-num">04</div>
+        <div class="service-num">03</div>
         <div>
           <div class="service-name">その他メニュー</div>
-          <p class="service-desc">お身体の状態やご要望に応じて様々なメニューをご用意しています。初めての方はカウンセリングでご相談ください。</p>
+          <p class="service-desc">指圧マッサージ・Deep Tissue Massageなど、お身体の状態やご要望に応じて様々なメニューをご用意しています。初めての方はカウンセリングでご相談ください。</p>
         </div>
       </div>
     </div>
@@ -341,72 +351,23 @@
   </div>
 </section>
 
-<!-- [SECTION: Proposal - First Visit Flow] -->
-<!-- ===== FIRST VISIT / PROPOSAL ===== -->
-<section class="section section--cream" id="first-visit">
-  <div class="container" style="text-align:center;">
-    <div class="section-label">First Visit</div>
-    <!-- [COPY: First visit section title] -->
-    <h2 class="section-title" data-aos="fade-up">何から始めればいいか<br>迷っている方へ。</h2>
-    <div class="divider" style="margin: 24px auto 32px;"></div>
-    <!-- [COPY: First visit recommendation text] -->
-    <p class="section-lead" style="margin: 0 auto 48px;" data-aos="fade-up">
-      はじめての方には、まず <span class="first-visit-highlight">60分のリメディアルマッサージ</span> をおすすめしています。
-    </p>
-
-    <!-- [COPY: First visit 3-step flow] -->
-    <div class="steps-grid" data-aos="fade-up" data-aos-delay="100">
-      <div class="steps-connector"></div>
-      <div class="step-item">
-        <div class="step-num">1</div>
-        <!-- [COPY: Step 1 title] -->
-        <div class="step-title">カウンセリング・評価<br><small style="font-weight:400; color:var(--gray);">約10分</small></div>
-        <!-- [COPY: Step 1 description] -->
-        <p class="step-desc">いつから・どこが・どのように痛むかを丁寧に確認。姿勢・動きのクセもチェックし、痛みの根本原因を把握します。</p>
-      </div>
-      <div class="step-item">
-        <div class="step-num">2</div>
-        <!-- [COPY: Step 2 title] -->
-        <div class="step-title">施術<br><small style="font-weight:400; color:var(--gray);">約45分</small></div>
-        <!-- [COPY: Step 2 description] -->
-        <p class="step-desc">評価結果をもとに、指圧・トリガーポイント・ストレッチなどを組み合わせてアプローチします。</p>
-      </div>
-      <div class="step-item">
-        <div class="step-num">3</div>
-        <!-- [COPY: Step 3 title] -->
-        <div class="step-title">アドバイス・プラン<br><small style="font-weight:400; color:var(--gray);">約5分</small></div>
-        <!-- [COPY: Step 3 description] -->
-        <p class="step-desc">施術後の変化を確認し、自宅ケアのコツや、必要であれば継続プランをご提案します。</p>
-      </div>
-    </div>
-
-    <!-- [COPY: First visit reassurance note] -->
-    <p class="first-visit-note" data-aos="fade-up">
-      「施術を受けるかどうかまだ迷っている」「とりあえず身体の状態だけ見てほしい」という方も、お気軽にどうぞ。
-    </p>
-
-    <!-- [COPY: First visit CTA button] -->
-    <a href="https://www.fresha.com/book-now/zen-japanese-massage-r4r98fda/all-offer?share=true&pId=521319" target="_blank" rel="noopener noreferrer" class="btn btn--primary" data-aos="fade-up">初回60分リメディアルマッサージを予約する →</a>
-    <p style="margin-top:16px; font-size:.82rem; color:var(--gray);">カウンセリング含む ・ 完全予約制 ・ 24時間受付</p>
-  </div>
-</section>
 
 <!-- [SECTION: Reviews / Social Proof] -->
 <!-- ===== REVIEWS / SOCIAL PROOF ===== -->
-<section class="section" id="reviews">
+<section class="section section--cream" id="reviews">
   <div class="container">
     <div class="section-label" style="text-align:center;">Customer Reviews</div>
-    <h2 class="section-title" style="text-align:center;">5,000件以上の口コミが、<br>私たちの品質を証明します。</h2>
+    <h2 class="section-title" style="text-align:center;">Freshaで5,000件以上の<br>口コミをいただいています</h2>
     <div class="divider" style="margin: 24px auto 56px;"></div>
 
     <!-- 合計件数：大きく打ち出す -->
     <div class="proof-total">
       <div class="proof-total-num">5,000<span class="proof-plus">+</span></div>
-      <div class="proof-total-label">Fresha 累計レビュー数</div>
+      <div class="proof-total-label">Fresha 累計レビュー数<sup style="font-size:.6em; vertical-align:super;">※</sup></div>
     </div>
 
     <!-- Freshaレーティング -->
-    <div class="proof-platforms" style="grid-template-columns: 1fr; max-width: 320px; margin: 0 auto;">
+    <div class="proof-platforms" style="grid-template-columns: 1fr; max-width: 320px; margin: 0 auto; background: #fff; border: 1px solid #b8973a;">
       <div class="proof-platform">
         <div class="proof-platform-name">Fresha</div>
         <div class="proof-stars-row">
@@ -417,40 +378,27 @@
           <svg viewBox="0 0 20 20" class="proof-star-svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
         </div>
         <div class="proof-rating-num">5.0</div>
-        <div class="proof-review-count">5,000件以上のレビュー</div>
+        <div class="proof-review-count">5,000件以上のレビュー<sup style="font-size:.65em; vertical-align:super;">※</sup></div>
       </div>
     </div>
 
-    <!-- 信頼文 -->
-    <p class="proof-tagline">
-      シドニーの日系マッサージとして最大級の口コミ数。<br>
-      創業14年、5,000件以上の積み重ねが私たちの品質を示しています。
+    <!-- Fresha Best in Class 2026 Award -->
+    <div style="text-align:center; margin: 40px auto 8px;" data-aos="fade-up">
+      <img
+        src="fresha-best-in-class-2026.png"
+        alt="Fresha Best in Class 2026 Award — Zen Japanese Massage"
+        style="display:block; margin:0 auto; max-width:280px; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,.12);"
+      />
+      <p style="font-size:.82rem; color:var(--gray); margin-top:12px;">Fresha Best in Class 2026 受賞</p>
+    </div>
+
+    <!-- 注記 -->
+    <p class="proof-tagline" style="font-size:.8rem; color:var(--gray); opacity:.8;">
+      ※ NSW（5拠点）・Auckland・Brisbaneを含む全店舗の累計レビュー数（2026年5月時点）。評価は店舗・時期により異なる場合があります。
     </p>
 
-    <!-- 実際のインタビューをもとにした体験談 -->
-    <div class="testimonial-cards">
-      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="testimonial-quote-mark">"</div>
-        <p class="testimonial-text">一見ぜいたくに思えるかもしれないけれど、実はぜいたくなんかではありません。自分のために使う、大切な時間なんです。いつ来ても素晴らしい。</p>
-        <div class="testimonial-summary">✦ いつ来ても素晴らしい</div>
-        <div class="testimonial-author">
-          <div class="testimonial-author-name">Melissa</div>
-          <div class="testimonial-author-detail">UNSW教授・50代・12年来のリピーター</div>
-        </div>
-      </div>
-      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="120">
-        <div class="testimonial-quote-mark">"</div>
-        <p class="testimonial-text">誰を予約してもいつも良いマッサージが受けられて、帰るときには必ず「やってよかった、なぜもっと早く来なかったんだろう」と思います。私向けに調整されている感覚が、ここにしかないんです。</p>
-        <div class="testimonial-summary">✦ 私向けに調整されている</div>
-        <div class="testimonial-author">
-          <div class="testimonial-author-name">Cindy</div>
-          <div class="testimonial-author-detail">組織コンサルタント・62歳・5年来のリピーター</div>
-        </div>
-      </div>
-    </div>
-
     <div style="text-align:center; margin-top: 40px;">
-      <a href="https://www.fresha.com/book-now/zen-japanese-massage-r4r98fda/all-offer?share=true&pId=521319" target="_blank" rel="noopener noreferrer" class="btn btn--primary">この実績を、あなた自身で体感してください →</a>
+      <a href="https://www.fresha.com/book-now/zen-japanese-massage-r4r98fda/all-offer?share=true&pId=521319" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Freshaで口コミを確認して予約する →</a>
     </div>
   </div>
 </section>
@@ -482,11 +430,12 @@
 <section class="section" id="locations">
   <div class="container" style="text-align:center;">
     <div class="section-label">Locations</div>
-    <h2 class="section-title">シドニー 5店舗展開</h2>
+    <h2 class="section-title">NSW 5拠点展開</h2>
     <div class="divider" style="margin: 24px auto 32px;"></div>
     <p class="locations-text">
       📍 Enmore &nbsp;｜&nbsp; St. Leonards &nbsp;｜&nbsp; Surry Hills &nbsp;｜&nbsp; Bondi Junction &nbsp;｜&nbsp; Wollongong
     </p>
+    <p style="font-size:.82rem; color:var(--gray); margin: 16px 0 32px;">※ Teneriffe（Brisbane）・Auckland にも店舗があります</p>
     <a href="https://www.fresha.com/book-now/zen-japanese-massage-r4r98fda/all-offer?share=true&pId=521319" target="_blank" rel="noopener noreferrer" class="btn btn--primary">近くの店舗を選んで予約する →</a>
   </div>
 </section>
@@ -498,17 +447,13 @@
     <h2 class="section-title" style="text-align:center;">よくあるご質問</h2>
     <div class="divider" style="margin: 24px auto 40px;"></div>
     <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">初回はどれくらい時間がかかりますか？</button>
-        <div class="faq-a">初回はカウンセリング込みで約60〜75分を目安にお越しください。来店後、まずお身体の状態・お悩み・日常生活についてヒアリングを行い、そのうえで最適な施術プランをご提案します。2回目以降は施術時間のみのご案内となります。</div>
-      </div>
-      <div class="faq-item">
+<div class="faq-item">
         <button class="faq-q" aria-expanded="false">施術は痛いですか？指圧が怖いのですが…</button>
-        <div class="faq-a">「気持ちよい痛さ」を目安に、常にお客様の反応を確認しながら圧を調整します。強い圧が苦手な方は遠慮なくお申し出ください。「痛くてつらい」という状態にはなりません。初回は特に丁寧にコミュニケーションを取りながら進めますので、ご安心ください。</div>
+        <div class="faq-a">「気持ちよい痛さ」を目安に、常にお客様の反応を確認しながら圧を調整します。強い圧が苦手な方は遠慮なくお申し出ください。「痛くてつらい」という状態にならないよう、常にコミュニケーションを取りながら進めます。初回は特に丁寧に確認しながら進めますので、ご安心ください。</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">キャンセルや日程変更はできますか？</button>
-        <div class="faq-a">はい、可能です。ご予約の24時間前までであれば、予約システム（Fresha）から無料でキャンセル・変更いただけます。急なご事情の場合はご連絡ください。「予約したけどキャンセルできない」という心配は不要ですので、まずお気軽にご予約ください。</div>
+        <div class="faq-a">はい、いつでも可能です。予約システム（Fresha）からキャンセル・変更いただけます。なお、直前のキャンセルはキャンセルポリシーに基づき手数料が発生する場合があります。「予約したけどキャンセルできない」という心配は不要ですので、まずお気軽にご予約ください。</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">保険証書（ヘルスカード）を持っていない場合はどうなりますか？</button>
@@ -516,45 +461,28 @@
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">民間保険はどの保険会社が対象ですか？</button>
-        <div class="faq-a">Medibank、Bupa、HCFをはじめとする主要な民間医療保険に対応しています。HICAPS端末を設置しており、施術後にその場でクレームの処理が可能です。ご利用の保険会社について不明な点はお気軽にお問い合わせください。</div>
+        <div class="faq-a">Medibank、Bupa、HCFをはじめとする主要な民間医療保険に対応しています。HICAPS端末を設置しており、施術後にその場でクレームの処理が可能です。ご利用の保険会社について不明な点はお気軽にお問い合わせください。なお、保険の適用可否・還付金額はご加入のプラン・Provider認定・待機期間・年間上限により異なります。</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">タイマッサージとどう違うのですか？</button>
-        <div class="faq-a">タイマッサージは主にストレッチを多用した全身のリラクゼーションが目的ですが、当店は「指圧」とトリガーポイント療法を中心に、不調の根本原因にアプローチします。医療資格を持つセラピストが施術するため、繰り返す痛みや慢性的な不調の改善を目的としたご利用に特に適しています。</div>
+        <button class="faq-q" aria-expanded="false">どんな施術技術を用いていますか？</button>
+        <div class="faq-a">当店では「指圧」とトリガーポイント療法を中心に、筋肉の「こり」の原因点（トリガーポイント）を捉えた深層アプローチを行います。各メニューに応じた資格・研修を修了したセラピストが担当しますので、筋肉の緊張・こりのケアを目的としたご利用に適しています。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">バッカルマッサージ（Buccal Massage）はどんな施術ですか？</button>
+        <div class="faq-a">口腔内と顔・顎まわりに働きかけるフェイシャル施術です。顎の緊張・顎まわりのこわばりや不快感が気になる方や、フェイスラインのケアを目的とした方にご利用いただいています。施術はセラピストが手袋を着用して行い、衛生面にも十分配慮しています。詳細・料金はFresha予約画面からご確認ください。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Gua Sha・Lymphatic Drainageはどんな方に向いていますか？</button>
+        <div class="faq-a">Gua Sha（グアシャ）は、顔・首まわりのむくみ・くすみ・フェイスラインが気になる方に。Lymphatic Drainage（リンパドレナージュ）は、顔や体のむくみ・だるさ・すっきり感を求める方に特に好評です。どちらもやさしい施術ですので、初めての方もお気軽にどうぞ。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">フェイシャルメニューと通常のマッサージは同じ日に受けられますか？</button>
+        <div class="faq-a">はい、組み合わせてご予約いただくことも可能です。ご要望はFresha予約画面でのメニュー選択時にご指定いただくか、ご来店後にスタッフへご相談ください。</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- [SECTION: How to Book - Booking Process] -->
-<!-- ===== HOW TO BOOK ===== -->
-<section class="section" id="how-to-book">
-  <div class="container" style="text-align:center;">
-    <div class="section-label">How to Book</div>
-    <h2 class="section-title">初めての方も、3ステップで簡単予約</h2>
-    <div class="divider" style="margin: 24px auto 48px;"></div>
-    <div class="steps-grid">
-      <div class="steps-connector"></div>
-      <div class="step-item">
-        <div class="step-num">1</div>
-        <div class="step-title">予約ボタンをクリック</div>
-        <p class="step-desc">このページの「今すぐ予約」から24時間いつでも予約可能。アカウント不要で簡単に手続きできます。</p>
-      </div>
-      <div class="step-item">
-        <div class="step-num">2</div>
-        <div class="step-title">店舗・日時・メニューを選択</div>
-        <p class="step-desc">お近くの店舗を選び、ご都合の良い日時とメニューをお選びください。所要時間も画面上で確認できます。</p>
-      </div>
-      <div class="step-item">
-        <div class="step-num">3</div>
-        <div class="step-title">当日ご来店</div>
-        <p class="step-desc">初回はカウンセリングからスタート。保険をご利用の方はヘルスカードをお持ちください。あとはお任せください。</p>
-      </div>
-    </div>
-    <a href="https://www.fresha.com/book-now/zen-japanese-massage-r4r98fda/all-offer?share=true&pId=521319" target="_blank" rel="noopener noreferrer" class="btn btn--primary">今すぐ予約する（無料・24時間受付）→</a>
-    <p style="margin-top:16px; font-size:.82rem; color:var(--gray);">キャンセル・変更は24時間前まで無料 ・ 完全予約制</p>
-  </div>
-</section>
 
 <!-- ===== CTA SECTION ===== -->
 <section class="cta-section" id="booking">
@@ -562,11 +490,10 @@
     <div class="section-label" style="color: var(--gold-lt);">Booking</div>
     <h2 class="section-title">今すぐ予約する</h2>
     <div class="divider"></div>
-    <p class="section-lead">14年の実績と医療資格を持つセラピストが、あなたの不調に向き合います。<br>初めての方も、まずはお気軽にご相談ください。</p>
+    <p class="section-lead">14年の歴史を持つZen Japanese Massageで、あなたのお身体のこりや緊張に向き合います。<br>初めての方も、まずはお気軽にご相談ください。</p>
     <div class="cta-btns">
       <a href="https://www.fresha.com/book-now/zen-japanese-massage-r4r98fda/all-offer?share=true&pId=521319" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="font-size: 1.05rem; padding: 18px 48px;">オンライン予約（Fresha）→</a>
     </div>
-    <p class="cta-note">完全予約制 ・ 民間保険適用 ・ 日本語対応</p>
   </div>
 </section>
 
@@ -576,14 +503,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand">Zen Japanese Massage</div>
-        <p class="footer-tagline">フィジオセラピストが経営する、指圧とトリガーポイント療法専門の日系マッサージスタジオ。創業14年、シドニーで最も信頼される日系施術院を目指しています。</p>
-      </div>
-      <div>
-        <div class="footer-heading">メニュー</div>
-        <ul class="footer-links">
-          <li><a href="#services">リメディアルマッサージ</a></li>
-          <li><a href="#services">指圧マッサージ</a></li>
-        </ul>
+        <p class="footer-tagline">AHPRA登録フィジオセラピストが経営する日系マッサージスタジオ。リメディアルから、Buccal・Gua Sha・Lymphatic Drainageまで対応。創業14年、NSW各拠点で多くのお客様にご利用いただいています。</p>
       </div>
       <div>
         <div class="footer-heading">ご予約</div>
@@ -591,9 +511,17 @@
           <li><a href="https://www.fresha.com/book-now/zen-japanese-massage-r4r98fda/all-offer?share=true&pId=521319" target="_blank" rel="noopener noreferrer">オンライン予約（Fresha）</a></li>
         </ul>
       </div>
+      <div>
+        <div class="footer-heading">ポリシー</div>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="cancellation-policy.html">Cancellation Policy</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
-      © 2024 Zen Japanese Massage. All rights reserved.
+      © 2026 Zen Japanese Massage. All rights reserved.
     </div>
   </div>
 </footer>
